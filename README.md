@@ -10,7 +10,7 @@ It is a factory which takes digestate input and produces fertilizer, liquid fert
 * Silo trigger has motion sensing lighting at night, and a guide light for fill point
 * Cannot refuel vehicles directly. Fill tanker trailer and refuel from the tanker trailer.
 
-##Credits
+## Credits
 * Models, prefabs: Giants, Dorset, Al-Modding.
 * Silo trigger light marker concept: GTX Mods
 * FabrikScript, Additional Triggers: kevink98, marhu
