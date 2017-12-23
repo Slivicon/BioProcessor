@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="38">
+    <author>Slivicon</author>
+    <title>
+        <de>Gärrest-Prozessor</de>
+        <en>Digestate Processor</en>
+        <fr>Processeur de digestat</fr>
+    </title>
+    <description>
+        <de><![CDATA[
+        Diese Fabrik nimmt Gärreste auf und produziert Dünger, Flüssigdünger und Treibstoff.
+        
+        300K Gärrest produziert 120K Dünger, 120K Flüssigdünger und 60K Treibstoff in 24 Stunden (5000 pro Stunde).
+
+        -Verwenden Sie universelle Kotte-Tankwagen für die optionale unterstützte Schlauchverbindung Düngerstreuer und Sprühgeräte direkt füllen
+        -Silo Trigger hat Bewegungserkennung Beleuchtung in der Nacht und ein Führungslicht für Füllpunkt
+        -Kann Fahrzeuge nicht direkt betanken. Tankwagen auffüllen und vom Tankwagen auftanken.
+        
+        Credits:
+        Models, prefabs: Giants, Dorset, Al-Modding.
+        Silo Triggerlicht Marker-Konzept: GTX Mods
+        FabrikScript, Additional Triggers: kevink98, marhu
+        ]]></de>
+        <en><![CDATA[
+        This factory takes digestate and produces fertilizer, liquid fertilizer and fuel.
+        
+        300K digestate produces 120K fertilizer, 120K liquid fertilizer and 60K fuel in 24 hours (5000 per hour).
+        
+        -Use universal kotte tanker trailers for optional supported hose connection
+        -Fill fertilizer spreaders and sprayers directly
+        -Silo trigger has motion sensing lighting at night, and a guide light for fill point
+        -Cannot refuel vehicles directly. Fill tanker trailer and refuel from the tanker trailer.
+        
+        Credits:
+        Models, prefabs: Giants, Dorset, Al-Modding.
+        Silo trigger light marker concept: GTX Mods
+        FabrikScript, Additional Triggers: kevink98, marhu
+        ]]></en>
+        <fr><![CDATA[
+        Cette usine prend digestat et produit des engrais, des engrais liquides et du carburant.
+        
+        300K digestat produit des engrais 120K, 120K engrais liquide et 60K carburant dans 24 heures (5000) par heure.
+
+        -Utiliser remorques universelles citernes de Kotte pour le raccordement du tuyau supporté en option épandeurs d'engrais
+        -Remplir les épandeurs d'engrais et les pulvérisateurs directement
+        -La gâchette de Silo a l'éclairage de détection de mouvement la nuit, et une lumière de guide pour le point de remplissage
+        -Impossible de ravitailler les véhicules directement. Remplissez une citerne directement et faire remplir des véhicules de la citerne.
+        
+        Crédits:
+        Modèles, prefabs: Giants, Dorset, Al-Modding.
+        Concept de marqueur de lumière à gâchette de silo: GTX Mods
+        FabrikScript, Additionial Triggers: kevink98, marhu
+         ]]></fr>
+    </description>
+    <multiplayer supported="true"/>
+    <iconFilename>store.dds</iconFilename>
+    <version>1.0.0.0</version>
+    <inputBindings/>
+    <storeItems>
+        <storeItem xmlFilename="digestateProcessor.xml" rootNode="placeable"/>
+    </storeItems>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/FabrikScript.lua"/>
+        <sourceFile filename="scripts/AdditionalTriggers.lua"/>
+    </extraSourceFiles>
+    <l10n>
+        <text name="leer">
+            <de>Leer</de>
+            <en>Empty</en>
+            <fr>Vide</fr>
+        </text>
+        <text name="voll">
+            <de>Voll</de>
+            <en>Full</en>
+            <vr>Plein</vr>
+        </text>
+        <text name="ERROR">
+            <de><![CDATA[Info: ]]></de>
+            <en><![CDATA[Info: ]]></en>
+            <fr><![CDATA[Info : ]]></fr>
+        </text>
+        <text name="inputTrigger">
+            <de><![CDATA[Rohstoffe: ]]></de>
+            <en><![CDATA[Input: ]]></en>
+            <fr><![CDATA[Input : ]]></fr>
+        </text>
+        <text name="outputTrigger">
+            <de><![CDATA[Produkte: ]]></de>
+            <en><![CDATA[Output: ]]></en>
+            <fr><![CDATA[Output : ]]></fr>
+        </text>
+        <text name="AdditionalTrigger_helpBoxTextInfo">
+            <de>Exit Vehicle To Configure Automatic Filling</de>
+            <en>Exit Vehicle To Configure Automatic Filling</en>
+            <fr>Exit Vehicle To Configure Automatic Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_helpBoxTextAuto">
+            <de>Silo Trigger Is Set To Automatic Filling</de>
+            <en>Silo Trigger Is Set To Automatic Filling</en>
+            <fr>Silo Trigger Is Set To Automatic Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_helpBoxTextManual">
+            <de>Silo Trigger Is Set To Manual Filling</de>
+            <en>Silo Trigger Is Set To Manual Filling</en>
+            <fr>Silo Trigger Is Set To Manual Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_automaticFill">
+            <de>Set Silo Trigger To Automatic Filling</de>
+            <en>Set Silo Trigger To Automatic Filling</en>
+            <fr>Set Silo Trigger To Automatic Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_manualFill">
+            <de>Set Silo Trigger To Manual Filling</de>
+            <en>Set Silo Trigger To Manual Filling</en>
+            <fr>Set Silo Trigger To Manual Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_startFill">
+            <de>Start Filling</de>
+            <en>Start Filling</en>
+            <fr>Start Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_stopFill">
+            <de>Stop Filling</de>
+            <en>Stop Filling</en>
+            <fr>Stop Filling</fr>
+        </text>
+        <text name="AdditionalTrigger_digestate_DP_start">
+            <de>Start Loading Digestate</de>
+            <en>Start Loading Digestate</en>
+            <fr>Start Loading Digestate</fr>
+        </text>
+        <text name="AdditionalTrigger_digestate_DP_stop">
+            <de>Stop Loading Digestate</de>
+            <en>Stop Loading Digestate</en>
+            <fr>Stop Loading Digestate</fr>
+        </text>
+        <text name="AdditionalTrigger_fuel_DP_start">
+            <de>Start Loading Fuel</de>
+            <en>Start Loading Fuel</en>
+            <fr>Start Loading Fuel</fr>
+        </text>
+        <text name="AdditionalTrigger_fuel_DP_stop">
+            <de>Stop Loading Fuel</de>
+            <en>Stop Loading Fuel</en>
+            <fr>Stop Loading Fuel</fr>
+        </text>
+        <text name="AdditionalTrigger_liquidFertilizer_DP_start">
+            <de>Start Loading Liquid Fertilizer</de>
+            <en>Start Loading Liquid Fertilizer</en>
+            <fr>Start Loading Liquid Fertilizer</fr>
+        </text>
+        <text name="AdditionalTrigger_liquidFertilizer_DP_stop">
+            <de>Stop Loading Liquid Fertilizer</de>
+            <en>Stop Loading Liquid Fertilizer</en>
+            <fr>Stop Loading Liquid Fertilizer</fr>
+        </text>
+        <text name="digestate_DP">
+            <de>Digestate</de>
+            <en>Digestate</en>
+            <fr>Digestate</fr>
+        </text>
+        <text name="fertilizer_DP">
+            <de>Fertilizer</de>
+            <en>Fertilizer</en>
+            <fr>Fertilizer</fr>
+        </text>
+        <text name="liquidFertilizer_DP">
+            <de>Liquid Fertilizer</de>
+            <en>Liquid Fertilizer</en>
+            <fr>Liquid Fertilizer</fr>
+        </text>
+        <text name="fuel_DP">
+            <de>Fuel</de>
+            <en>Fuel</en>
+            <fr>Fuel</fr>
+        </text>
+        <text name="function_DP">
+            <de><![CDATA[Diese Fabrik nimmt Gärreste und produziert Dünger, Flüssigdünger und Treibstoff.]]></de>
+            <en><![CDATA[This factory takes digestate and produces fertilizer, liquid fertilizer and fuel.]]></en>
+            <fr><![CDATA[Cette usine prend digestat et produit des engrais, des engrais liquides et du carburant.]]></fr>
+        </text>
+    </l10n>
+</modDesc>
