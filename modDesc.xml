@@ -6,6 +6,7 @@
         <en>Digestate Processor</en>
         <fr>Processeur de digestat</fr>
     </title>
+    <version>1.0.0.1</version>
     <description>
         <de><![CDATA[
         Diese Fabrik nimmt Gärreste auf und produziert Dünger, Flüssigdünger und Treibstoff.
@@ -54,7 +55,6 @@
     </description>
     <multiplayer supported="true"/>
     <iconFilename>store.dds</iconFilename>
-    <version>1.0.0.0</version>
     <inputBindings/>
     <storeItems>
         <storeItem xmlFilename="digestateProcessor.xml" rootNode="placeable"/>
