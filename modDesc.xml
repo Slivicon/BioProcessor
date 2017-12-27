@@ -54,7 +54,7 @@
          ]]></fr>
     </description>
     <multiplayer supported="true"/>
-    <iconFilename>store.dds</iconFilename>
+    <iconFilename>icon.dds</iconFilename>
     <inputBindings/>
     <storeItems>
         <storeItem xmlFilename="digestateProcessor.xml" rootNode="placeable"/>
@@ -90,89 +90,89 @@
             <fr><![CDATA[Output : ]]></fr>
         </text>
         <text name="AdditionalTrigger_helpBoxTextInfo">
-            <de>Exit Vehicle To Configure Automatic Filling</de>
+            <de>Verlassen Sie das Fahrzeug, um das automatische Befüllen zu konfigurieren</de>
             <en>Exit Vehicle To Configure Automatic Filling</en>
-            <fr>Exit Vehicle To Configure Automatic Filling</fr>
+            <fr>Quitter le véhicule pour configurer le remplissage automatique</fr>
         </text>
         <text name="AdditionalTrigger_helpBoxTextAuto">
-            <de>Silo Trigger Is Set To Automatic Filling</de>
+            <de>Silo-Trigger ist auf automatisches Füllen eingestellt</de>
             <en>Silo Trigger Is Set To Automatic Filling</en>
-            <fr>Silo Trigger Is Set To Automatic Filling</fr>
+            <fr>Le déclencheur de silo est réglé sur le remplissage automatique</fr>
         </text>
         <text name="AdditionalTrigger_helpBoxTextManual">
-            <de>Silo Trigger Is Set To Manual Filling</de>
+            <de>Silo-Trigger ist auf manuelles Füllen eingestellt</de>
             <en>Silo Trigger Is Set To Manual Filling</en>
-            <fr>Silo Trigger Is Set To Manual Filling</fr>
+            <fr>Le déclencheur de silo est réglé sur le remplissage manuel</fr>
         </text>
         <text name="AdditionalTrigger_automaticFill">
-            <de>Set Silo Trigger To Automatic Filling</de>
+            <de>Stellen Sie den Siloauslöser auf Automatisches Füllen ein</de>
             <en>Set Silo Trigger To Automatic Filling</en>
-            <fr>Set Silo Trigger To Automatic Filling</fr>
+            <fr>Réglez la gâchette du silo sur le remplissage automatique</fr>
         </text>
         <text name="AdditionalTrigger_manualFill">
-            <de>Set Silo Trigger To Manual Filling</de>
+            <de>Stellen Sie den Silo-Trigger auf manuelles Füllen ein</de>
             <en>Set Silo Trigger To Manual Filling</en>
-            <fr>Set Silo Trigger To Manual Filling</fr>
+            <fr>Réglez le déclencheur de silo sur le remplissage manuel</fr>
         </text>
         <text name="AdditionalTrigger_startFill">
-            <de>Start Filling</de>
+            <de>Beginne mit dem Füllen</de>
             <en>Start Filling</en>
-            <fr>Start Filling</fr>
+            <fr>Commencer à remplir</fr>
         </text>
         <text name="AdditionalTrigger_stopFill">
-            <de>Stop Filling</de>
+            <de>Beende die Füllung</de>
             <en>Stop Filling</en>
-            <fr>Stop Filling</fr>
+            <fr>Arrêter le remplissage</fr>
         </text>
         <text name="AdditionalTrigger_digestate_DP_start">
-            <de>Start Loading Digestate</de>
+            <de>Starten Sie Gärrest Laden</de>
             <en>Start Loading Digestate</en>
-            <fr>Start Loading Digestate</fr>
+            <fr>Démarrer le chargement du digestat</fr>
         </text>
         <text name="AdditionalTrigger_digestate_DP_stop">
-            <de>Stop Loading Digestate</de>
+            <de>Stoppen Gärrest Laden</de>
             <en>Stop Loading Digestate</en>
-            <fr>Stop Loading Digestate</fr>
+            <fr>Arrêtez de charger le digestat</fr>
         </text>
         <text name="AdditionalTrigger_fuel_DP_start">
-            <de>Start Loading Fuel</de>
+            <de>Start Laden von Treibstoff</de>
             <en>Start Loading Fuel</en>
-            <fr>Start Loading Fuel</fr>
+            <fr>Démarrer le chargement du carburant</fr>
         </text>
         <text name="AdditionalTrigger_fuel_DP_stop">
-            <de>Stop Loading Fuel</de>
+            <de>Stoppt das Laden von Treibstoff</de>
             <en>Stop Loading Fuel</en>
-            <fr>Stop Loading Fuel</fr>
+            <fr>Arrêter de charger le carburant</fr>
         </text>
         <text name="AdditionalTrigger_liquidFertilizer_DP_start">
-            <de>Start Loading Liquid Fertilizer</de>
+            <de>Starten Sie den Flüssigdünger</de>
             <en>Start Loading Liquid Fertilizer</en>
-            <fr>Start Loading Liquid Fertilizer</fr>
+            <fr>Commencer à charger l'engrais liquide</fr>
         </text>
         <text name="AdditionalTrigger_liquidFertilizer_DP_stop">
-            <de>Stop Loading Liquid Fertilizer</de>
+            <de>Hören Sie auf, Flüssigdünger zu laden</de>
             <en>Stop Loading Liquid Fertilizer</en>
-            <fr>Stop Loading Liquid Fertilizer</fr>
+            <fr>Arrêtez de charger l'engrais liquide</fr>
         </text>
         <text name="digestate_DP">
-            <de>Digestate</de>
+            <de>Gärrest</de>
             <en>Digestate</en>
-            <fr>Digestate</fr>
+            <fr>digestat</fr>
         </text>
         <text name="fertilizer_DP">
-            <de>Fertilizer</de>
+            <de>Dünger</de>
             <en>Fertilizer</en>
-            <fr>Fertilizer</fr>
+            <fr>Engrais</fr>
         </text>
         <text name="liquidFertilizer_DP">
-            <de>Liquid Fertilizer</de>
+            <de>Flüssigdünger</de>
             <en>Liquid Fertilizer</en>
-            <fr>Liquid Fertilizer</fr>
+            <fr>Engrais liquide</fr>
         </text>
         <text name="fuel_DP">
-            <de>Fuel</de>
+            <de>Treibstoff</de>
             <en>Fuel</en>
-            <fr>Fuel</fr>
+            <fr>Carburant</fr>
         </text>
         <text name="function_DP">
             <de><![CDATA[Diese Fabrik nimmt Gärreste und produziert Dünger, Flüssigdünger und Treibstoff.]]></de>
