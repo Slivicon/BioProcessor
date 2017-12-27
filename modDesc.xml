@@ -21,6 +21,14 @@
         Models, prefabs: Giants, Dorset, Al-Modding.
         Silo Triggerlicht Marker-Konzept: GTX Mods
         FabrikScript, Additional Triggers: kevink98, marhu
+
+        Änderungsprotokoll:
+        v1.0.0.1 2017-12-26
+          -Update Übersetzungen, Symbole
+        
+        v1.0.0.0 2017-12-22
+          -Erstveröffentlichung
+
         ]]></de>
         <en><![CDATA[
         This factory takes digestate and produces fertilizer, liquid fertilizer and fuel.
@@ -36,6 +44,14 @@
         Models, prefabs: Giants, Dorset, Al-Modding.
         Silo trigger light marker concept: GTX Mods
         FabrikScript, Additional Triggers: kevink98, marhu
+        
+        Changelog:
+        v1.0.0.1 2017-12-26
+          -Update translations, icons
+        
+        v1.0.0.0 2017-12-22
+          -Initial release
+        
         ]]></en>
         <fr><![CDATA[
         Cette usine prend digestat et produit des engrais, des engrais liquides et du carburant.
@@ -51,6 +67,14 @@
         Modèles, prefabs: Giants, Dorset, Al-Modding.
         Concept de marqueur de lumière à gâchette de silo: GTX Mods
         FabrikScript, Additionial Triggers: kevink98, marhu
+
+        Journal des modifications:
+        v1.0.0.1 2017-12-26
+          -Mises à jour de traduction, icônes
+        
+        v1.0.0.0 2017-12-22
+          -Première version
+
          ]]></fr>
     </description>
     <multiplayer supported="true"/>
