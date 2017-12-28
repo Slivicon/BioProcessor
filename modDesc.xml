@@ -2,47 +2,52 @@
 <modDesc descVersion="38">
     <author>Slivicon</author>
     <title>
-        <de>Gärrest-Prozessor</de>
-        <en>Digestate Processor</en>
-        <fr>Processeur de digestat</fr>
+        <de>BioProcessor</de>
+        <en>BioProcessor</en>
+        <fr>BioProcessor</fr>
     </title>
-    <version>1.0.0.2</version>
+    <version>2.0.0.0</version>
     <description>
         <de><![CDATA[
-        Diese Fabrik nimmt Gärreste auf und produziert Dünger, Flüssigdünger und Treibstoff.
+        Diese Fabrik nimmt Gärreste, Flüssigmiste oder Mist auf und produziert Dünger, Flüssigdünger und Treibstoff.
         
-        300K Gärrest produziert 120K Dünger, 120K Flüssigdünger und 60K Treibstoff in 24 Stunden (5000 pro Stunde).
+        300K Gärreste, Flüssigmiste oder Mist produziert 120K Dünger, 120K Flüssigdünger und 60K Treibstoff in 24 Stunden (5000 pro Stunde).
 
-        -Verwenden Sie universelle Kotte-Tankwagen für die optionale unterstützte Schlauchverbindung Düngerstreuer und Sprühgeräte direkt füllen
-        -Silo Trigger hat Bewegungserkennung Beleuchtung in der Nacht und ein Führungslicht für Füllpunkt
-        -Kann Fahrzeuge nicht direkt betanken. Tankwagen auffüllen und vom Tankwagen auftanken.
-        
+        -Stellen Sie sicher, das Spiel auf die neueste Patch-Version zu aktualisieren.
+        -Verwenden Sie universelle Kotte-Tankwagen für die optionale unterstützte Schlauchverbindung Düngerstreuer und Sprühgeräte direkt füllen.
+        -Silo Trigger hat Bewegungserkennung Beleuchtung in der Nacht und ein Führungslicht für Füllpunkt.
+        -Kann Fahrzeuge nicht direkt betanken. Tankwagen auffüllen und vom Tankwagen auftanken.  Dies liegt daran, dass der Verkauf eines Platzes mit einem TankTrigger zu Fehlern im Spiel führt.
+        -Um anzupassen, extrahieren zip, öffnen Sie bioProcessor.i3d in Windows Editor (müssen nicht GE verwenden), speichern Sie Änderungen und setzen Sie in zip:
+          -Ändern Sie den ProduktPerHour-Wert, um die Produktionsgeschwindigkeit zu ändern
+          -Ändern Sie die Kapazitätswerte, um die Kapazität zu ändern
+          -fillLitersPerSecond-Wert ändern, um die Füllgeschwindigkeit des Düngerrohrs zu ändern
+          -Öffnen Sie bioProcessor.xml und ändern Sie "dailyUpkeep" und "price" nach Ihren Wünschen
+          -funktioniert nur im Multiplayer, wenn alle Spieler die gleiche Version der Zip-Datei haben
+          -getestet in 1.5.3.1 Karte mit mCompany Sawmill auch installiert und keine Fehler
+
         Credits:
         Models, prefabs: Giants, Dorset, Al-Modding.
         Silo Triggerlicht Marker-Konzept: GTX Mods
         FabrikScript, Additional Triggers: kevink98, marhu
 
-        Änderungsprotokoll:
-        v1.0.0.2 2017-12-27
-          -Aktualisieren Sie fehlende französische Übersetzungen
-          -fillLitersPerSecond (digestateProcessor.i3d) für Dünger erhöht auf 1500 (war 50, FabrikScript Standard)
-
-        v1.0.0.1 2017-12-26
-          -Update Übersetzungen, Symbole
-        
-        v1.0.0.0 2017-12-22
-          -Erstveröffentlichung
-
         ]]></de>
         <en><![CDATA[
-        This factory takes digestate and produces fertilizer, liquid fertilizer and fuel.
+        This factory takes digestate (BGA), manure or liquid manure (slurry) and produces fertilizer, liquid fertilizer and fuel.
         
-        300K digestate produces 120K fertilizer, 120K liquid fertilizer and 60K fuel in 24 hours (5000 per hour).
+        300K digestate, manure or liquid manure produces 120K fertilizer, 120K liquid fertilizer and 60K fuel in 24 hours (5000 per hour).
         
+        -Make sure to update the game to the latest patch version
         -Use universal kotte tanker trailers for optional supported hose connection
         -Fill fertilizer spreaders and sprayers directly
         -Silo trigger has motion sensing lighting at night, and a guide light for fill point
-        -Cannot refuel vehicles directly. Fill tanker trailer and refuel from the tanker trailer.
+        -Cannot refuel vehicles directly. Fill tanker trailer and refuel from the tanker trailer. This is because selling a placeable with a TankTrigger causes errors in the game.
+        -To customize, extract zip, open bioProcessor.i3d in Windows Notepad (do not have to use GE), save changes and put back in zip:
+          -change ProduktPerHour value to change production speed
+          -change "capacity" values to change capacities
+          -change fillLitersPerSecond value to change fill speed of fertilizer pipe
+          -open bioProcessor.xml and change "dailyUpkeep" and "price" to your preference
+          -will only work in multiplayer if all players have the exact same version of zip file
+          -tested in 1.5.3.1 map with mCompany Sawmill also installed and no errors
         
         Credits:
         Models, prefabs: Giants, Dorset, Al-Modding.
@@ -50,6 +55,10 @@
         FabrikScript, Additional Triggers: kevink98, marhu
         
         Changelog:
+        v2.0.0.0 2017-12-28
+          -Now additionally accepts input of liquid manure (slurry) or manure as well as digestate, as not all maps have digestate (BGA)
+          -Now renamed BioProcessor, as input is no longer restricted to digestate
+
         v1.0.0.2 2017-12-27
           -Update missing French translations
           -Fertilizer fillLitersPerSecond increased to 1500 (was 50, FabrikScript default)
@@ -62,14 +71,21 @@
         
         ]]></en>
         <fr><![CDATA[
-        Cette usine prend digestat et produit des engrais, des engrais liquides et du carburant.
+        Cette usine prend du digestat, du fumier ou du lisier et produit des engrais, des engrais liquides et du carburant.
         
-        300K digestat produit des engrais 120K, 120K engrais liquide et 60K carburant dans 24 heures (5000) par heure.
+        300K digestat, fumier ou lisier produit 120K des engrais, 120K engrais liquide et 60K carburant dans 24 heures (5000) par heure.
 
-        -Utiliser remorques universelles citernes de Kotte pour le raccordement du tuyau supporté en option épandeurs d'engrais
-        -Remplir les épandeurs d'engrais et les pulvérisateurs directement
-        -La gâchette de Silo a l'éclairage de détection de mouvement la nuit, et une lumière de guide pour le point de remplissage
-        -Impossible de ravitailler les véhicules directement. Remplissez une citerne directement et faire remplir des véhicules de la citerne.
+        -Utiliser remorques universelles citernes de Kotte pour le raccordement du tuyau supporté en option épandeurs d'engrais.
+        -Remplir les épandeurs d'engrais et les pulvérisateurs directement.
+        -La gâchette de Silo a l'éclairage de détection de mouvement la nuit, et une lumière de guide pour le point de remplissage.
+        -Impossible de ravitailler les véhicules directement. Remplissez une citerne directement et faire remplir des véhicules de la citerne. C'est parce que vendre un placeable avec un TankTrigger provoque des erreurs dans le jeu.
+        -Pour personnaliser, extraire le fichier zip, ouvrez le fichier bioProcessor.i3d dans le bloc-notes de Windows (ne pas utiliser GE), enregistrez les modifications et remettez-les dans le zip:
+          -changer la valeur de "ProduktPerHour" pour changer la vitesse de production
+          -changer les valeurs de "capacity" pour changer les capacités
+          -changer la valeur de "fillLitersPerSecond" pour changer la vitesse de remplissage du tuyau d'engrais
+          -ouvrez le fichier bioProcessor.xml et changez "dailyUpkeep" et "price" selon vos préférences
+          -ne fonctionnera en multijoueur que si tous les joueurs ont exactement la même version du fichier zip
+          -testé dans la carte 1.5.3.1 avec mCompany Sawmill également installé et sans erreurs
         
         Crédits:
         Modèles, prefabs: Giants, Dorset, Al-Modding.
@@ -77,6 +93,8 @@
         FabrikScript, Additionial Triggers: kevink98, marhu
 
         Journal des modifications:
+        v2.0.0.0 2017-12-28
+        
         v1.0.0.2 2017-12-27
           - Mettre à jour les traductions françaises manquantes
           - fillLitersPerSecond pour l'engrais augmenté à 1500 (était 50, FabrikScript par défaut)
@@ -93,7 +111,7 @@
     <iconFilename>icon.dds</iconFilename>
     <inputBindings/>
     <storeItems>
-        <storeItem xmlFilename="digestateProcessor.xml" rootNode="placeable"/>
+        <storeItem xmlFilename="bioProcessor.xml" rootNode="placeable"/>
     </storeItems>
     <extraSourceFiles>
         <sourceFile filename="scripts/FabrikScript.lua"/>
@@ -160,15 +178,15 @@
             <en>Stop Filling</en>
             <fr>Arrêter le remplissage</fr>
         </text>
-        <text name="AdditionalTrigger_digestate_DP_start">
-            <de>Starten Sie Gärrest Laden</de>
-            <en>Start Loading Digestate</en>
-            <fr>Démarrer le chargement du digestat</fr>
+        <text name="AdditionalTrigger_L_input_DP_start">
+            <de>Starten Sie Gärrest, Flüssigmist oder Mist Laden</de>
+            <en>Start Loading Digestate, Liquid Manure or Manure</en>
+            <fr>Démarrer le chargement du digestat, lisier ou fumier</fr>
         </text>
-        <text name="AdditionalTrigger_digestate_DP_stop">
-            <de>Stoppen Gärrest Laden</de>
-            <en>Stop Loading Digestate</en>
-            <fr>Arrêtez de charger le digestat</fr>
+        <text name="AdditionalTrigger_L_input_DP_stop">
+            <de>Stoppen Sie Gärrest, Flüssigmist oder Mist Laden</de>
+            <en>Stop Loading Digestate, Liquid Manure or Manure</en>
+            <fr>Arrêtez de charger le digestat, lisier ou fumier</fr>
         </text>
         <text name="AdditionalTrigger_fuel_DP_start">
             <de>Start Laden von Treibstoff</de>
@@ -186,14 +204,14 @@
             <fr>Commencer à charger l'engrais liquide</fr>
         </text>
         <text name="AdditionalTrigger_liquidFertilizer_DP_stop">
-            <de>Hören Sie auf, Flüssigdünger zu laden</de>
+            <de>Stoppen Flüssigdünger Laden</de>
             <en>Stop Loading Liquid Fertilizer</en>
             <fr>Arrêtez de charger l'engrais liquide</fr>
         </text>
-        <text name="digestate_DP">
-            <de>Gärrest</de>
-            <en>Digestate</en>
-            <fr>digestat</fr>
+        <text name="input_DP">
+            <de>Gärrest, Flüssigmist oder Mist</de>
+            <en>Digestate, Liquid Manure or Manure</en>
+            <fr>Digestat, lisier ou fumier</fr>
         </text>
         <text name="fertilizer_DP">
             <de>Dünger</de>
@@ -211,9 +229,9 @@
             <fr>Carburant</fr>
         </text>
         <text name="function_DP">
-            <de><![CDATA[Diese Fabrik nimmt Gärreste und produziert Dünger, Flüssigdünger und Treibstoff.]]></de>
-            <en><![CDATA[This factory takes digestate and produces fertilizer, liquid fertilizer and fuel.]]></en>
-            <fr><![CDATA[Cette usine prend digestat et produit des engrais, des engrais liquides et du carburant.]]></fr>
+            <de><![CDATA[Diese Fabrik nimmt Gärrest, Flüssigmist oder Mist und produziert Dünger, Flüssigdünger und Treibstoff.]]></de>
+            <en><![CDATA[This factory takes digestate (BGA), manure or liquid manure (slurry) and produces fertilizer, liquid fertilizer and fuel.]]></en>
+            <fr><![CDATA[Cette usine prend digestat, fumier ou lisier et produit des engrais, des engrais liquides et du carburant.]]></fr>
         </text>
     </l10n>
 </modDesc>

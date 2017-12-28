@@ -1,145 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<CustomShader version="3" classRequirement = "">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomShader version="3" classRequirement="">
     <Parameters>
-        <Parameter name="RDT"                     target="RDT"                      type="float4" group="base"                  defaultValue="1.0 1.0 20.0 20.0"     minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 50.0 50.0"/>
-        <Parameter name="offsetUV"                target="offsetUV"                 type="float4" group="offsetUV"              defaultValue="0.0 0.0 0.0 0.0"       minValue = "-10.0 -10.0 -10.0 -10.0"  maxValue = "10.0 10.0 10.0 10.0"/>
-        <Parameter name="uvCenterSize"            target="uvCenterSize"             type="float4" group="uvRotate"              defaultValue="0.5 0.5 1.0 1.0"       minValue = "-1.0 -1.0 0.0 0.0"        maxValue = "1.0 1.0 50.0 50.0"/>
-        <Parameter name="uvScale"                 target="uvScale"                  type="float4" group="uvScale"               defaultValue="1.0 1.0 1.0 1.0"       minValue = "-10.0 -10.0 -10.0 -10.0"  maxValue = "10.0 10.0 10.0 10.0"/>
-        <Parameter name="colorScale"              target="colorScale"               type="float4" group="color"                 defaultValue="0.8 0.55 0.055 1.0"    minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 1.0 1.0"/>
-        <Parameter name="morphPosition"           target="morphPosition"            type="float4" group="morphPosition"         defaultValue="-0.45 -0.915 0.5 0.1"  minValue = "-4.0 -4.0 0.0 0.0"        maxValue = "2.0 2.0 1.0 1.0"/>
-        <Parameter name="scrollPosition"          target="scrollPosition"           type="float4" group="scroll"                defaultValue="0.0 0.0 0.0 0.0"/>
-        <Parameter name="lengthAndRadius"         target="lengthAndRadius"          type="float4" group="scroll"                defaultValue="2.0 0.5 0.0 0.0"/>
-        <Parameter name="widthAndDiam"            target="widthAndDiam"             type="float2" group="rim"                   defaultValue="40 40"/>
-        <Parameter name="connectorPos"            target="connectorPos"             type="float4" group="connectorPos"          defaultValue="0 80 40 40"/>
-        <Parameter name="numberOfStaticsAndDiam"  target="numberOfStaticsAndDiam"   type="float2" group="numStatics"            defaultValue="4 40"/>
-        <Parameter name="connectorPosAndScale"    target="connectorPosAndScale"     type="float3" group="connectorPosAndScale"  defaultValue="0 80 1.0"/>
-        <Parameter name="beltPos"                 target="beltPos"                  type="float"  group="beltPos"               defaultValue="0.0"/>
-        <Parameter name="cv0"                     target="cv0"                      type="float4" group="catmull"               defaultValue="2 2 -5 0"/>
-        <Parameter name="cv1"                     target="cv1"                      type="float4" group="catmull"               defaultValue="0 0 0 0"/>
-        <Parameter name="cv2"                     target="cv2"                      type="float4" group="catmull"               defaultValue="0 0 10 0"/>
-        <Parameter name="cv3"                     target="cv3"                      type="float4" group="catmull"               defaultValue="-2 2 15 0"/>
-        <Parameter name="lengthInvLength"         target="lengthInvLength"          type="float4" group="catmull"               defaultValue="10 0.1 0 0"/>
-        <Parameter name="uvHide"                  target="uvHide"                   type="float4" group="uvHide"                defaultValue="0.0 1.0 0.0 0.0"       minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 1.0 1.0"/>        
-        <Parameter name="axisCompression"         target="axisCompression"          type="float4" group="jiggling"              defaultValue="1 0 0 5"/>
-        <Parameter name="amplFreq"                target="amplFreq"                 type="float4" group="jiggling"              defaultValue="1 1 0 0"/>
+        <Parameter name="RDT" target="RDT" type="float4" group="base" defaultValue="1.0 1.0 20.0 20.0" minValue="0.0 0.0 0.0 0.0" maxValue="1.0 1.0 50.0 50.0"/>
+        <Parameter name="offsetUV" target="offsetUV" type="float4" group="offsetUV" defaultValue="0.0 0.0 0.0 0.0" minValue="-10.0 -10.0 -10.0 -10.0" maxValue="10.0 10.0 10.0 10.0"/>
+        <Parameter name="uvCenterSize" target="uvCenterSize" type="float4" group="uvRotate" defaultValue="0.5 0.5 1.0 1.0" minValue="-1.0 -1.0 0.0 0.0" maxValue="1.0 1.0 50.0 50.0"/>
+        <Parameter name="uvScale" target="uvScale" type="float4" group="uvScale" defaultValue="1.0 1.0 1.0 1.0" minValue="-10.0 -10.0 -10.0 -10.0" maxValue="10.0 10.0 10.0 10.0"/>
+        <Parameter name="colorScale" target="colorScale" type="float4" group="color" defaultValue="0.8 0.55 0.055 1.0" minValue="0.0 0.0 0.0 0.0" maxValue="1.0 1.0 1.0 1.0"/>
+        <Parameter name="morphPosition" target="morphPosition" type="float4" group="morphPosition" defaultValue="-0.45 -0.915 0.5 0.1" minValue="-4.0 -4.0 0.0 0.0" maxValue="2.0 2.0 1.0 1.0"/>
+        <Parameter name="scrollPosition" target="scrollPosition" type="float4" group="scroll" defaultValue="0.0 0.0 0.0 0.0"/>
+        <Parameter name="lengthAndRadius" target="lengthAndRadius" type="float4" group="scroll" defaultValue="2.0 0.5 0.0 0.0"/>
+        <Parameter name="widthAndDiam" target="widthAndDiam" type="float2" group="rim" defaultValue="40 40"/>
+        <Parameter name="connectorPos" target="connectorPos" type="float4" group="connectorPos" defaultValue="0 80 40 40"/>
+        <Parameter name="numberOfStaticsAndDiam" target="numberOfStaticsAndDiam" type="float2" group="numStatics" defaultValue="4 40"/>
+        <Parameter name="connectorPosAndScale" target="connectorPosAndScale" type="float3" group="connectorPosAndScale" defaultValue="0 80 1.0"/>
+        <Parameter name="beltPos" target="beltPos" type="float" group="beltPos" defaultValue="0.0"/>
+        <Parameter name="cv0" target="cv0" type="float4" group="catmull" defaultValue="2 2 -5 0"/>
+        <Parameter name="cv1" target="cv1" type="float4" group="catmull" defaultValue="0 0 0 0"/>
+        <Parameter name="cv2" target="cv2" type="float4" group="catmull" defaultValue="0 0 10 0"/>
+        <Parameter name="cv3" target="cv3" type="float4" group="catmull" defaultValue="-2 2 15 0"/>
+        <Parameter name="lengthInvLength" target="lengthInvLength" type="float4" group="catmull" defaultValue="10 0.1 0 0"/>
+        <Parameter name="uvHide" target="uvHide" type="float4" group="uvHide" defaultValue="0.0 1.0 0.0 0.0" minValue="0.0 0.0 0.0 0.0" maxValue="1.0 1.0 1.0 1.0"/>
+        <Parameter name="axisCompression" target="axisCompression" type="float4" group="jiggling" defaultValue="1 0 0 5"/>
+        <Parameter name="amplFreq" target="amplFreq" type="float4" group="jiggling" defaultValue="1 1 0 0"/>
     </Parameters>
     <Textures>
         <Texture name="DirtNmap" defaultColorProfile="linearRGB" defaultFilename="../shared/dirt_normal.png"/>
     </Textures>
     <Variations>
-        <Variation name="meshScroll" groups="base scroll">
-<![CDATA[
+        <Variation name="meshScroll" groups="base scroll"><![CDATA[
     // Enables caterpillar mesh scrolling
     #define MESH_SCROLL 
-]]>
-        </Variation>    
-        <Variation name="uvScroll" groups="base offsetUV">
-<![CDATA[
+]]></Variation>
+        <Variation name="uvScroll" groups="base offsetUV"><![CDATA[
     // Enables UV scrolling
     #define UV_SCROLL       
-]]>
-        </Variation>
-        <Variation name="uvScrollHideBySecondUV" groups="base offsetUV uvHide">
-<![CDATA[
+]]></Variation>
+        <Variation name="uvScrollHideBySecondUV" groups="base offsetUV uvHide"><![CDATA[
     #define UV_SCROLL
     #define HIDE_BY_SECOND_UV
-]]>
-        </Variation>
-        <Variation name="uvRotate" groups="base offsetUV uvRotate">
-<![CDATA[
+]]></Variation>
+        <Variation name="uvRotate" groups="base offsetUV uvRotate"><![CDATA[
     // Enables UV rotation
     #define UV_ROTATE       
-]]>
-        </Variation>
-        <Variation name="uvScale" groups="base uvScale">
-<![CDATA[
+]]></Variation>
+        <Variation name="uvScale" groups="base uvScale"><![CDATA[
     // Enables UV scaling
     #define UV_SCALE       
-]]>
-        </Variation>
-        <Variation name="Decal">
-<![CDATA[
+]]></Variation>
+        <Variation name="Decal"><![CDATA[
     // Enables 2nd UV set for specular
     #define DECAL_RENDER    
-]]>
-        </Variation>
-        <Variation name="Window">
-<![CDATA[
+]]></Variation>
+        <Variation name="Window"><![CDATA[
     // should be used with akphaBlended material
     #define WINDOW
-]]>
-        </Variation>
-        <Variation name="colorMask" groups="base color">
-<![CDATA[
+]]></Variation>
+        <Variation name="colorMask" groups="base color"><![CDATA[
     // Enables colorPainting by mask from glossMap.a
     #define COLOR_MASK      
-]]>
-        </Variation>
-        <Variation name="tirePressureDeformation" groups="base morphPosition">
-<![CDATA[
+]]></Variation>
+        <Variation name="tirePressureDeformation" groups="base morphPosition"><![CDATA[
     // Enables deformation of the tire (offset vertices of the mesh)
     #define TIRE_PRESSURE_DEFORMATION      
-]]>
-        </Variation>
-        <Variation name="RIM" groups="base rim color">
-<![CDATA[
+]]></Variation>
+        <Variation name="RIM" groups="base rim color"><![CDATA[
     // Enables smart scale for some parts of the mesh (masked by vertex colors)
     // see example file
     #define RIM
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="RIM_colorMask" groups="base rim color">
-<![CDATA[
+]]></Variation>
+        <Variation name="RIM_colorMask" groups="base rim color"><![CDATA[
     #define RIM
     #define COLOR_MASK
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="RIM_numberOfStatics_colorMask" groups="base numStatics color">
-<![CDATA[
+]]></Variation>
+        <Variation name="RIM_numberOfStatics_colorMask" groups="base numStatics color"><![CDATA[
     #define NUMBER_OF_STATICS_AND_DIAM
     #define RIM_NUMBER_OF_STATICS
     #define COLOR_MASK    
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="RIM_DUAL1_colorMask" groups="base connectorPos numStatics color">
-<![CDATA[
+]]></Variation>
+        <Variation name="RIM_DUAL1_colorMask" groups="base connectorPos numStatics color"><![CDATA[
     // Enables smart scale for some parts of the mesh (masked by vertex colors)
     // see example file
     #define RIM_DUAL1
     #define NUMBER_OF_STATICS_AND_DIAM
     #define COLOR_MASK
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="HUB_DUAL1_colorMask" groups="base connectorPosAndScale color">
-<![CDATA[
+]]></Variation>
+        <Variation name="HUB_DUAL1_colorMask" groups="base connectorPosAndScale color"><![CDATA[
     // Enables smart scale for some parts of the mesh (masked by vertex colors)
     // see example file
     #define HUB_DUAL1
     #define COLOR_MASK
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="BELT_KUHN" groups="base beltPos">
-<![CDATA[
+]]></Variation>
+        <Variation name="BELT_KUHN" groups="base beltPos"><![CDATA[
     // Enables smart mesh and uv deform (masked by vertex colors)
     // see example file
     #define BELT_KUHN
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation>
-        <Variation name="LOCAL_CATMULL_ROM" groups="base catmull">
-<![CDATA[
+]]></Variation>
+        <Variation name="LOCAL_CATMULL_ROM" groups="base catmull"><![CDATA[
     // Enables 4 points Catmull rom spline
     #define LOCAL_CATMULL_ROM
-]]>
-        </Variation>
-        <Variation name="jiggling" groups="base jiggling">
-<![CDATA[
+]]></Variation>
+        <Variation name="jiggling" groups="base jiggling"><![CDATA[
     // Enables jiggling effect
     // requires: 
     //      vertexColor.rgb  - jiggling (roatation) pivot (per vertex part)
@@ -149,13 +115,11 @@
     //
     #define MESH_JIGGLING
     #define DISABLE_VERTEX_COLOR
-]]>
-        </Variation> 
+]]></Variation>
     </Variations>
-    <LodLevel startDistance = "0">
+    <LodLevel startDistance="0">
         <CodeInjections>
-            <CodeInjection position = "MATERIALINFO">
-<![CDATA[
+            <CodeInjection position="MATERIALINFO"><![CDATA[
 #if defined( DISABLE_VERTEX_COLOR )
     #if defined(VERTEX_COLOR)
         #undef VERTEX_COLOR
@@ -279,23 +243,17 @@
     uniform float4 axisCompression;
     uniform float4 amplFreq;
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "SAMPLERS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="SAMPLERS"><![CDATA[
 sampler2D DirtNmap;
-]]>
-            </CodeInjection>
-            <CodeInjection position = "FS_GLOBALS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="FS_GLOBALS"><![CDATA[
     float4 gGloss;
     float  gAO;
     float  gDirt;
     float  maxSpecularIntensity;
-]]>
-            </CodeInjection>
-            <CodeInjection position = "CONFIG_DEFINES">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="CONFIG_DEFINES"><![CDATA[
 #if GPU_PROFILE < GPU_PROFILE_MEDIUM
     #if defined( REFLECTION_MAP_CUBE )
         #undef REFLECTION_MAP_CUBE
@@ -310,20 +268,16 @@ sampler2D DirtNmap;
     // Remap gloss map lookups to our custom tex coord
     #define GLOSSMAP_TEXCOORD glossMapTexCoords2
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="VS_OUTPUT">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="VS_OUTPUT"><![CDATA[
 #if defined( DECAL_RENDER )
     float2 glossMapTexCoords2 : TEXCOORDn;
 #endif
 #if defined( HIDE_BY_SECOND_UV )
     float2 albedoMapTexCoord2 : TEXCOORDn;
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="SAMPLERS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="SAMPLERS"><![CDATA[
 #if defined( UV_ROTATE )
 float2 m_getUVRotationSinCos( )
 {
@@ -348,10 +302,8 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
     return mDeformPos;
 }
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="GET_POSITION_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_POSITION_VS"><![CDATA[
     float3 mPos          = In.position.xyz;
 #if defined( MESH_JIGGLING )
     {
@@ -461,10 +413,8 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
     mDeformedPosition += localY * (mPushUp * mMaskBase);
     return float4( mDeformedPosition, 1.0 );
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="POST_SET_TEXCOORDS_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS"><![CDATA[
 #if defined( BELT_KUHN )
     float2 mUV = convertDefaultTexCoords( In, In.texCoords0.xy );
     float mScaler1 = beltPos + 1;
@@ -510,10 +460,8 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
     mUV.xy *= uvScale.xy;
     Out.defaultTexCoords = mUV;
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="START_POS_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="START_POS_VS"><![CDATA[
 #if defined( MESH_SCROLL ) 
     float mTotalLenght = 3.1415926*lengthAndRadius.y + 2*lengthAndRadius.x;
 
@@ -583,10 +531,8 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
     position.xyz = splinePos.xyz + mul( rotMat, v );
 }
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="GET_NORMAL_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS"><![CDATA[
 #if defined( MESH_SCROLL ) 
     float3 normal = In.normal.xyz;
     float mTotalLenght = 3.1415926*lengthAndRadius.y + 2*lengthAndRadius.x;
@@ -631,10 +577,8 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
 
     return normal;
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="GET_TANGENT_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_TANGENT_VS"><![CDATA[
 #if defined( MESH_SCROLL ) 
     float3 tangent = In.tangent.xyz;
     float mTotalLenght = 3.1415926*lengthAndRadius.y + 2*lengthAndRadius.x;
@@ -690,20 +634,16 @@ float3 m_getQuaternionDeformPos( float mAngle, float3 mAxis, float3 mPos )
         t.y*mSinCos.y - b.y*mSinCos.x,
         t.z*mSinCos.y - b.z*mSinCos.x);
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="GET_BITANGENT_VS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_BITANGENT_VS"><![CDATA[
 #if defined( MESH_SCROLL ) 
     return cross(getNormal(In), getTangent(In))*In.tangent.w;
 #endif
 #if defined( UV_ROTATE ) && defined( ALBEDO_MAP )
     return cross(In.normal.xyz, getTangent(In))*In.tangent.w;
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "START_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="START_FS"><![CDATA[
 #if defined( GLOSS_MAP )
 /*
 glossMap.r - roughness
@@ -721,10 +661,8 @@ glossMap.a - color mask ( if enabled )
     globals.gDirt = 0;
 #endif
 globals.maxSpecularIntensity = 0.5; // iron
-]]>
-            </CodeInjection>
-            <CodeInjection position = "GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS"><![CDATA[
 #if defined( NORMAL_MAP )
     float3 mNormal;
     #ifdef NORMAL_MAP_SIGNED_2CHANNEL
@@ -737,17 +675,13 @@ globals.maxSpecularIntensity = 0.5; // iron
     float3 mDirtNmap = tex2D( DirtNmap, float2( RDT.z, RDT.w ) * In.vs.NORMALMAP_TEXCOORD ).xyz - 0.5;
     return mNormal + float3(mDirtNmap.xy, 0.0) * (1 - globals.gDirt);
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "GET_TANGENT_SPACE_NORMAL_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_TANGENT_SPACE_NORMAL_FS"><![CDATA[
 #if defined( NORMAL_MAP )
     return normalize(getUnnormalizedTangentSpaceNormal(In, globals));
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "POST_ALBEDO_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="POST_ALBEDO_FS"><![CDATA[
 #if defined( SPECULAR ) && defined( GLOSS_MAP )
     #if defined( COLOR_MASK )
         albedo.xyz = lerp( albedo.rgb, albedo.rgb * colorScale.rgb, globals.gGloss.a );
@@ -760,10 +694,8 @@ globals.maxSpecularIntensity = 0.5; // iron
     #endif
     albedo.xyz *= globals.gAO; // Multiply AO for DIFFUSE
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "POST_GLOSS_COLOR_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="POST_GLOSS_COLOR_FS"><![CDATA[
 #if defined( SPECULAR ) && defined( GLOSS_MAP )
     #if defined( WINDOW )
         float cosPower = max(5000 * globals.gGloss.r * globals.gDirt, 0.1);
@@ -777,10 +709,8 @@ globals.maxSpecularIntensity = 0.5; // iron
         glossColor.xyz *= float3(0.0,0.0,0.0);
     #endif
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position = "GET_REFLECTION_COLOR_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="GET_REFLECTION_COLOR_FS"><![CDATA[
 #if GPU_PROFILE >= GPU_PROFILE_MEDIUM
     #if defined( REFLECTION_MAP_2D ) || defined( REFLECTION_MAP_CUBE )
         float3 mResult = getReflectionColorTex( In, globals, normal, tangentSpaceNormal, viewDir );
@@ -827,10 +757,8 @@ globals.maxSpecularIntensity = 0.5; // iron
         res = mResult;
     #endif
 #endif
-]]>
-            </CodeInjection>
-            <CodeInjection position="FINAL_POS_FS">
-<![CDATA[
+]]></CodeInjection>
+            <CodeInjection position="FINAL_POS_FS"><![CDATA[
 #if defined( ALPHA_BLENDED )
     #if defined( WINDOW )
         oColor.a += clamp( 0.65*(1-globals.gDirt), 0.0, 1.0 );
@@ -852,8 +780,7 @@ globals.maxSpecularIntensity = 0.5; // iron
     oColor.xyz += pow(cosPower/100, 2.2);
 }
 #endif
-]]>
-            </CodeInjection>
+]]></CodeInjection>
         </CodeInjections>
     </LodLevel>
 </CustomShader>
