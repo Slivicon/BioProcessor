@@ -25,7 +25,7 @@
         Änderungsprotokoll:
         v1.0.0.2 2017-12-27
           -Aktualisieren Sie fehlende französische Übersetzungen
-          -fillLitersPerSecond (digestateProcessor.i3d) für Dünger erhöht auf 200 (war 50, FabrikScript Standard)
+          -fillLitersPerSecond (digestateProcessor.i3d) für Dünger erhöht auf 1500 (war 50, FabrikScript Standard)
 
         v1.0.0.1 2017-12-26
           -Update Übersetzungen, Symbole
@@ -52,7 +52,7 @@
         Changelog:
         v1.0.0.2 2017-12-27
           -Update missing French translations
-          -Fertilizer fillLitersPerSecond increased to 200 (was 50, FabrikScript default)
+          -Fertilizer fillLitersPerSecond increased to 1500 (was 50, FabrikScript default)
 
         v1.0.0.1 2017-12-26
           -Update translations, icons
@@ -79,7 +79,7 @@
         Journal des modifications:
         v1.0.0.2 2017-12-27
           - Mettre à jour les traductions françaises manquantes
-          - fillLitersPerSecond pour l'engrais augmenté à 200 (était 50, FabrikScript par défaut)
+          - fillLitersPerSecond pour l'engrais augmenté à 1500 (était 50, FabrikScript par défaut)
 
         v1.0.0.1 2017-12-26
           -Mises à jour de traduction, icônes
