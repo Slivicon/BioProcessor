@@ -498,7 +498,7 @@
       <Attribute name="automaticTriggerIndex" type="string" value="5"/>
       <Attribute name="effectsNode" type="string" value="4"/>
       <Attribute name="fillType" type="string" value="fertilizer"/>
-      <Attribute name="fillLitersPerSecond" type="string" value="200"/>
+      <Attribute name="fillLitersPerSecond" type="string" value="1500"/>
       <Attribute name="fillVolumeDischargeNode" type="string" value="3"/>
       <Attribute name="fillVolumeDischargeNodeLength" type="float" value="0.3"/>
       <Attribute name="fillVolumeDischargeNodeWidth" type="float" value="0.2"/>
