@@ -6,7 +6,7 @@
         <en>Digestate Processor</en>
         <fr>Processeur de digestat</fr>
     </title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <description>
         <de><![CDATA[
         Diese Fabrik nimmt Gärreste auf und produziert Dünger, Flüssigdünger und Treibstoff.
@@ -23,6 +23,10 @@
         FabrikScript, Additional Triggers: kevink98, marhu
 
         Änderungsprotokoll:
+        v1.0.0.2 2017-12-27
+          -Aktualisieren Sie fehlende französische Übersetzungen
+          -fillLitersPerSecond (digestateProcessor.i3d) für Dünger erhöht auf 200 (war 50, FabrikScript Standard)
+
         v1.0.0.1 2017-12-26
           -Update Übersetzungen, Symbole
         
@@ -46,6 +50,10 @@
         FabrikScript, Additional Triggers: kevink98, marhu
         
         Changelog:
+        v1.0.0.2 2017-12-27
+          -Update missing French translations
+          -Fertilizer fillLitersPerSecond increased to 200 (was 50, FabrikScript default)
+
         v1.0.0.1 2017-12-26
           -Update translations, icons
         
@@ -69,6 +77,10 @@
         FabrikScript, Additionial Triggers: kevink98, marhu
 
         Journal des modifications:
+        v1.0.0.2 2017-12-27
+          - Mettre à jour les traductions françaises manquantes
+          - fillLitersPerSecond pour l'engrais augmenté à 200 (était 50, FabrikScript par défaut)
+
         v1.0.0.1 2017-12-26
           -Mises à jour de traduction, icônes
         
@@ -106,12 +118,12 @@
         <text name="inputTrigger">
             <de><![CDATA[Rohstoffe: ]]></de>
             <en><![CDATA[Input: ]]></en>
-            <fr><![CDATA[Input : ]]></fr>
+            <fr><![CDATA[Intrant : ]]></fr>
         </text>
         <text name="outputTrigger">
             <de><![CDATA[Produkte: ]]></de>
             <en><![CDATA[Output: ]]></en>
-            <fr><![CDATA[Output : ]]></fr>
+            <fr><![CDATA[Sortie : ]]></fr>
         </text>
         <text name="AdditionalTrigger_helpBoxTextInfo">
             <de>Verlassen Sie das Fahrzeug, um das automatische Befüllen zu konfigurieren</de>
