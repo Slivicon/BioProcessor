@@ -30,6 +30,21 @@
         Silo Triggerlicht Marker-Konzept: GTX Mods
         FabrikScript, Additional Triggers: kevink98, marhu
 
+        Änderungsprotokoll:
+        v2.0.0.0 2017-12-28
+          -akzeptiert jetzt Gärreste, Flüssigmiste oder Mist (da nicht alle Karten Gärreste enthalten)
+          -Jetzt umbenannt in BioProcessor, da es mehrere Eingabetypen akzeptiert
+
+        v1.0.0.2 2017-12-27
+          -Aktualisieren Sie fehlende französische Übersetzungen
+          -fillLitersPerSecond für Dünger auf 1500 erhöht (war 50, FabrikScript Standard)
+
+        v1.0.0.1 2017-12-26
+          -Aktualisieren Sie Übersetzungen, Symbole
+        
+        v1.0.0.0 2017-12-22
+          -Erstveröffentlichung
+
         ]]></de>
         <en><![CDATA[
         This factory takes digestate (BGA), manure or liquid manure (slurry) and produces fertilizer, liquid fertilizer and fuel.
@@ -92,15 +107,17 @@
         Concept de marqueur de lumière à gâchette de silo: GTX Mods
         FabrikScript, Additionial Triggers: kevink98, marhu
 
-        Journal des modifications:
-        v2.0.0.0 2017-12-28
-        
-        v1.0.0.2 2017-12-27
-          - Mettre à jour les traductions françaises manquantes
-          - fillLitersPerSecond pour l'engrais augmenté à 1500 (était 50, FabrikScript par défaut)
+        Journal des changements:
+        v2.0.0.0 2017-12-28
+          -Accepte maintenant le digestat, le lisier ou le fumier (car toutes les cartes n'ont pas de digestats (BGA))
+          -Maintenant renommé BioProcessor car il accepte plusieurs types d'entrées
+
+        v1.0.0.2 2017-12-27
+          -Mettre à jour les traductions françaises manquantes
+          -fillLitersPerSecond pour l'engrais augmenté à 1500 (était 50, FabrikScript par défaut)
 
         v1.0.0.1 2017-12-26
-          -Mises à jour de traduction, icônes
+          -Mettre à jour les traductions, les icônes
         
         v1.0.0.0 2017-12-22
           -Première version
